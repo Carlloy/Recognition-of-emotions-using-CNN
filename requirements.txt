@@ -1,0 +1,12 @@
+opencv-python>=4.1.0.25
+numpy>=1.16.2
+Pillow>=6.0.0
+pandas>=0.15.2
+scikit-learn>=0.19.1
+matplotlib>=3.1.0
+
+requests>=2.21.0
+grequests>=0.3.0
+
+Keras>=2.2.4
+tensorflow>=1.13.0
