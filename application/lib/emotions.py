@@ -2,13 +2,15 @@ from keras.preprocessing.image import img_to_array
 import cv2
 from keras.models import load_model
 import numpy as np
+import os
 
 
 class Emotions(object):
 
     def __init__(self):
         # model paths
-        self.emotion_model_path = '/Users/karolina/PycharmProjects/Recognition-of-emotions-using-CNN/training/models/model_CNN.30-0.66.hdf5'
+        self.emotion_model_path = os.path.dirname(os.path.abspath(__file__)) \
+								  + '/../../training/models/model_CNN.30-0.66.hdf5'
 
         # without compile=False code won't compile - Tensorflow
         self.emotion_model = load_model(self.emotion_model_path, compile=False)
