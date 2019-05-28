@@ -1,6 +1,6 @@
 # Recognition-of-emotions-using-CNN
 Student project of e-Health system. Real-time recognition of emotions and pulse detection from webcam video.
-
+More information about this project is in file `scientific_paper_about_project.pdf`. Till now it is only written in polish language.
 ## Dataset
 We are not allowed to publish FER2013 dataset.
 If you want to train model then you should download it on your own from [Kaggle](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data).

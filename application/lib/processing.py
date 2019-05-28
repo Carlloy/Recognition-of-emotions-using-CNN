@@ -20,7 +20,9 @@ class findFaceGetPulse(object):
 
     def __init__(self, emotions):
 
-        dpath = resource_path("haarcascade_frontalface_default.xml")
+        dpath = resource_path("application/haarcascade_frontalface_default.xml")
+        if not os.path.exists(dpath):
+            dpath = resource_path("haarcascade_frontalface_default.xml")
         if not os.path.exists(dpath):
             print("Cascade file not present!")
 
