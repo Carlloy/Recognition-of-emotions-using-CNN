@@ -7,15 +7,16 @@ If you want to train model then you should download it on your own from [Kaggle]
 Download `fer2013.tar.gz` from this website and decompress `fer2013.csv` in the `./training/dataset` folder.
 
 ## Requirements
-To install all dependecies
+To install all dependecies you will need pip.
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 ## Usage
-
+These are the commands that will allow you to start the program. The first one is used to train the model. You will need to download the FER2013 dataset before training. The second command is used to run an application used to detect pulse and emotions from the webcam image. Run it from the directory
+of this project.
 ```bash
 # To train model
-$ python3 
+$ python3 -m training.train_model.py
 # To use the app
-$ python3 ./Recognition-of-emotions-using-CNN/application/app.py
+$ python3 -m  application.app.py
 ```

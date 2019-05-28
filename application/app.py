@@ -75,20 +75,19 @@ class Pulse(object):
 
 
 def set_emotions_labels(emotions):
-    for i in range(7):
-        f = font.Font(label_pulse, label_pulse.cget("font"))
-        labels_emotion[i].configure(font=f, fg='black')
-        labels_emotions_value[i].configure(font=f, fg='black')
-        e = emotions[i]
-        e = "{:0.2f}%".format(e * 100)
-        var_emotions[i].set(e)
+	for i in range(7):
+		f = font.Font(label_pulse, label_pulse.cget("font"))
+		labels_emotion[i].configure(font=f, fg='black')
+		labels_emotions_value[i].configure(font=f, fg='black')
+		e = emotions[i]
+		e = "{:0.2f}%".format(e * 100)
+		var_emotions[i].set(e)
 
-    max_emotion = emotions.argmax()
-    bold_font = font.Font(labels_emotion[max_emotion], labels_emotion[max_emotion].cget("font"))
-    bold_font.configure(weight="bold")
-    labels_emotion[max_emotion].configure(font=bold_font, fg='red')
-    labels_emotions_value[max_emotion].configure(font=bold_font, fg='red')
-
+	max_emotion = emotions.argmax()
+	bold_font = font.Font(labels_emotion[max_emotion], labels_emotion[max_emotion].cget("font"))
+	bold_font.configure(weight="bold")
+	labels_emotion[max_emotion].configure(font=bold_font, fg='red')
+	labels_emotions_value[max_emotion].configure(font=bold_font, fg='red')
 
 
 p = Pulse()

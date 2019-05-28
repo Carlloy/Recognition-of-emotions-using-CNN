@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from keras_preprocessing.image import ImageDataGenerator
 
-fer_path = '/Users/karolina/PycharmProjects/Recognition-of-emotions-using-CNN/training/dataset/fer2013.csv'
+fer_path = 'Recognition-of-emotions-using-CNN/training/dataset/fer2013.csv'
 width, height = 48, 48
 data_generator = ImageDataGenerator(
 	featurewise_center=False,
